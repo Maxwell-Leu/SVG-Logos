@@ -1,0 +1,19 @@
+{
+    "name": "SVG-Logos",
+    "version": "1.0.0",
+    "lockfileVersion": 2,
+    "requires": true,
+    "author": "",
+    "description": "",
+    "license": "ISC",
+    "main": "index.js",
+    "packages": {},
+    "devDependencies": {
+      "inquirer": "^8.2.4",
+      "jest": "^24.9.0"
+    },
+    "scripts": {
+      "test": "jest"
+    }
+  }
+  
