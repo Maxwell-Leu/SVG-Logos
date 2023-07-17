@@ -1,5 +1,7 @@
 const inquirer = require('inquirer');
-
+const circle = require('./lib/circle');
+const triangle = require('./lib/triangle');
+const square = require('./lib/square');
 inquirer
   .prompt([
     {
@@ -19,10 +21,12 @@ inquirer
     },
     {
         type: 'input',
-        message: 'What is the of your logo?',
+        message: 'What is the shape of your logo?',
         name: 'shape',
     },
   ])
-  .then((data) =>
-    console.log('works')
-  );
+  .then((data) =>{
+    logo = new circle(data.text,data.textColor,data.logoColor);
+    logo.createFile()
+    logo.appendCode()
+  });
