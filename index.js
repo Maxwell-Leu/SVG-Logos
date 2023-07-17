@@ -23,6 +23,6 @@ inquirer
         name: 'shape',
     },
   ])
-  .then((response) =>
+  .then((data) =>
     console.log('works')
   );
