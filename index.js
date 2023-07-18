@@ -20,13 +20,24 @@ inquirer
       name: 'logoColor',
     },
     {
-        type: 'input',
+        type: 'list',
         message: 'What is the shape of your logo?',
+        choices:['Circle', 'Triangle', 'Square'],
         name: 'shape',
     },
   ])
   .then((data) =>{
-    logo = new circle(data.text,data.textColor,data.logoColor);
-    logo.createFile()
-    logo.appendCode()
+    if(data.shape.toLowerCase() == 'circle'){
+      logo = new circle(data.text,data.textColor,data.logoColor);
+      logo.createFile()
+      logo.appendCode()
+    } else if(data.shape.toLowerCase() == 'triangle'){
+      logo = new triangle(data.text,data.textColor,data.logoColor);
+      logo.createFile()
+      logo.appendCode()
+    }else{
+      logo = new square(data.text,data.textColor,data.logoColor);
+      logo.createFile()
+      logo.appendCode()
+    }
   });
