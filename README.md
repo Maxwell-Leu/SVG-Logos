@@ -2,7 +2,8 @@
 
 ## Description
 
-Creates SVG logos from user input
+Creates SVG logos from user input / 
+Demonstration video: https://youtu.be/J_Xux3Z8uvI
 
 ## Installation Instructions
 
